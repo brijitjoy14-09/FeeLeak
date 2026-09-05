@@ -1,0 +1,105 @@
+.copilot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.copilot-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 60vh;
+}
+
+.copilot-thread {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.copilot-welcome {
+  color: var(--text-muted);
+}
+
+.copilot-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.copilot-msg {
+  display: flex;
+}
+
+.copilot-user {
+  justify-content: flex-end;
+}
+
+.copilot-bubble {
+  max-width: 80%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.copilot-user .copilot-bubble {
+  background: var(--accent);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+.copilot-assistant .copilot-bubble {
+  background: var(--bg-surface-2);
+  color: var(--text-strong);
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 4px;
+}
+
+.copilot-bubble.is-error {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border-color: transparent;
+}
+
+.copilot-bubble p {
+  margin: 0 0 4px;
+}
+
+.copilot-bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.copilot-meta {
+  margin-top: 8px !important;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: var(--mono);
+}
+
+.copilot-thinking {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.copilot-input {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.copilot-input input {
+  flex: 1;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  color: var(--text-strong);
+}

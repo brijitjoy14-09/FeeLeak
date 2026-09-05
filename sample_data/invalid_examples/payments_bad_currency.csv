@@ -1,0 +1,2 @@
+payment_id,order_id,payment_date,payment_amount,currency,payment_status
+PAY001,ORD001,2026-08-01,12000,USD,captured

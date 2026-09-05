@@ -1,0 +1,6 @@
+refund_id,payment_id,refund_date,refund_amount,currency,refund_status
+REF001,PAY001,2026-08-02,1000,INR,processed
+REF002,PAY004,2026-08-03,500,INR,processed
+REF003,PAY004,2026-08-03,300,INR,processed
+REF004,PAY006,2026-08-04,1000,INR,processed
+REF999,PAY999,2026-08-05,250,INR,processed

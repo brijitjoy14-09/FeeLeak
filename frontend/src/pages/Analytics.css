@@ -1,0 +1,185 @@
+.analytics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.an-empty {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.an-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 1100px) {
+  .an-summary-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .an-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.an-two-col {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .an-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Charts -------------------------------------------------------------- */
+.chart-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chart-axis {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+.trend-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.trend-area {
+  fill: var(--accent-soft);
+  stroke: none;
+}
+
+.trend-dot {
+  fill: var(--bg-surface);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.chart-x-label {
+  fill: var(--text-muted);
+  font-size: 11px;
+  text-anchor: middle;
+}
+
+.chart-y-label {
+  fill: var(--text-muted);
+  font-size: 11px;
+  text-anchor: end;
+}
+
+/* ---- Impact bars --------------------------------------------------------- */
+.impact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.impact-row {
+  display: grid;
+  grid-template-columns: 150px 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.86rem;
+}
+
+.impact-label {
+  color: var(--text);
+}
+
+.impact-track {
+  height: 12px;
+  border-radius: 999px;
+  background: var(--neutral-soft);
+  overflow: hidden;
+}
+
+.impact-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--danger);
+}
+
+.impact-amount {
+  font-weight: 700;
+  color: var(--text-strong);
+  font-variant-numeric: tabular-nums;
+}
+
+.impact-count {
+  color: var(--text-muted);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* ---- AI insight ---------------------------------------------------------- */
+.ai-insight-panel {
+  border-left: 3px solid var(--accent);
+}
+
+.insight-summary {
+  margin: 0 0 12px;
+  color: var(--text-strong);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.insight-findings {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: var(--text);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.insight-priorities {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.insight-priorities-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.chip {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--accent);
+}
+
+/* Risk pills reused from Exceptions.css (globally loaded). */
