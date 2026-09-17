@@ -27,6 +27,7 @@ from .errors import AppError, app_error_handler
 ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://fee-leak.vercel.app",
 ]
 
 app = FastAPI(
